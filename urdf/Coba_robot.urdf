@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Coba_robot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0955210088112188 0.128829739596271 -0.111510795146166"
+        rpy="0 0 0" />
+      <mass
+        value="0.374618332010128" />
+      <inertia
+        ixx="0.000448929556780063"
+        ixy="-2.04455997946797E-15"
+        ixz="2.97490932378823E-05"
+        iyy="0.00126371737945785"
+        iyz="7.8173467267558E-16"
+        izz="0.000835575872446296" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Kaki 1">
+    <inertial>
+      <origin
+        xyz="0.0117264096319723 -1.0687480350921E-06 -0.0162238731352485"
+        rpy="0 0 0" />
+      <mass
+        value="0.0459766729637116" />
+      <inertia
+        ixx="3.80908959439166E-06"
+        ixy="1.13405655437806E-07"
+        ixz="2.9516492743732E-08"
+        iyy="9.12735150093024E-06"
+        iyz="-1.12615456063392E-10"
+        izz="1.06463676928076E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="11"
+    type="fixed">
+    <origin
+      xyz="0.0313968730221693 0.0637515761987747 0.138225076212438"
+      rpy="3.14159265358979 0 1.29804330499791" />
+    <parent
+      link="base_link" />
+    <child
+      link="Kaki 1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 1_2">
+    <inertial>
+      <origin
+        xyz="0.00720663762632177 0.00388241641337603 0.00166600998765189"
+        rpy="0 0 0" />
+      <mass
+        value="0.0550012449425468" />
+      <inertia
+        ixx="6.15632429667315E-06"
+        ixy="1.41064633745967E-06"
+        ixz="-2.95775598117591E-08"
+        iyy="1.01627471260802E-05"
+        iyz="8.19605559848041E-15"
+        izz="1.3999303699423E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 1_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 1_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="12"
+    type="fixed">
+    <origin
+      xyz="-0.0108401188099666 -0.0200013580608149 -0.0532499999982003"
+      rpy="-1.57079632679489 0 1.07413974500931" />
+    <parent
+      link="Kaki 1" />
+    <child
+      link="Kaki 1_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 1_3">
+    <inertial>
+      <origin
+        xyz="0.0219631417411719 -8.28462301531718E-07 0.000895982205306671"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569382188830977" />
+      <inertia
+        ixx="4.97477859840598E-06"
+        ixy="-1.38076293275694E-10"
+        ixz="-2.95782821506786E-08"
+        iyy="1.01414200280578E-05"
+        iyz="9.09661102242449E-15"
+        izz="1.11481951911747E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 1_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 1_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="13"
+    type="continuous">
+    <origin
+      xyz="-0.0233544016161321 0.0349080495752942 0"
+      rpy="0 0 1.83013105284461" />
+    <parent
+      link="Kaki 1_2" />
+    <child
+      link="Kaki 1_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Kaki 2">
+    <inertial>
+      <origin
+        xyz="0.0117281719901688 -3.20169534495651E-07 -0.0107761271901022"
+        rpy="0 0 0" />
+      <mass
+        value="0.045976673740398" />
+      <inertia
+        ixx="4.00034324518149E-06"
+        ixy="-6.74083314669933E-08"
+        ixz="-2.97013283241805E-08"
+        iyy="8.93609800445544E-06"
+        iyz="3.30135871801989E-11"
+        izz="1.06463678356939E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="21"
+    type="fixed">
+    <origin
+      xyz="0.0996549434093814 0.0651916390244269 0.165225076212438"
+      rpy="0 0 1.64710915539677" />
+    <parent
+      link="base_link" />
+    <child
+      link="Kaki 2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki_2_1">
+    <inertial>
+      <origin
+        xyz="0.0136236802209293 0.00268598866703232 0.00166600984116806"
+        rpy="0 0 0" />
+      <mass
+        value="0.0550012454240305" />
+      <inertia
+        ixx="5.05863921841792E-06"
+        ixy="-1.43626145191625E-06"
+        ixz="-2.95775653466656E-08"
+        iyy="1.1260432298044E-05"
+        iyz="7.22686350663354E-15"
+        izz="1.39993037941083E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki_2_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki_2_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="22"
+    type="fixed">
+    <origin
+      xyz="0.0219816543840897 -0.00586253960578838 0.0262499999982"
+      rpy="1.5707963267949 0 2.88095776656319" />
+    <parent
+      link="Kaki 2" />
+    <child
+      link="Kaki_2_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 2_3">
+    <inertial>
+      <origin
+        xyz="-0.0111263882592733 0.0189357412488982 -0.0198540164373166"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569382191379837" />
+      <inertia
+        ixx="8.81508569138267E-06"
+        ixy="2.2568853942459E-06"
+        ixz="1.49852435608981E-08"
+        iyy="6.301113028032E-06"
+        iyz="-2.55004193536201E-08"
+        izz="1.11481953070983E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 2_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 2_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="23"
+    type="fixed">
+    <origin
+      xyz="0.0343545625626959 0.0241620784495247 0.0207500000000003"
+      rpy="0 0 0.612861006640973" />
+    <parent
+      link="Kaki_2_1" />
+    <child
+      link="Kaki 2_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 3">
+    <inertial>
+      <origin
+        xyz="0.0117257955097682 2.43019542350842E-07 0.00272387295111298"
+        rpy="0 0 0" />
+      <mass
+        value="0.0459766733747581" />
+      <inertia
+        ixx="4.00712748527306E-06"
+        ixy="-5.38986916642589E-08"
+        ixz="-2.94521265133506E-08"
+        iyy="8.92931371121269E-06"
+        iyz="-2.60437718435383E-11"
+        izz="1.06463677855161E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="31"
+    type="fixed">
+    <origin
+      xyz="0.167338472190558 0.0741458495231372 0.151725076212438"
+      rpy="0 0 1.99617500579563" />
+    <parent
+      link="base_link" />
+    <child
+      link="Kaki 3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 3_2">
+    <inertial>
+      <origin
+        xyz="0.0120306630890009 -0.00449951658599376 -0.0130971697126351"
+        rpy="0 0 0" />
+      <mass
+        value="0.0472026139173069" />
+      <inertia
+        ixx="5.63104552430371E-06"
+        ixy="1.41905662757946E-06"
+        ixz="-5.49872224279449E-09"
+        iyy="8.85118438956662E-06"
+        iyz="-8.64314375891294E-14"
+        izz="1.22280015141294E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 3_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 3_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="32"
+    type="fixed">
+    <origin
+      xyz="-0.0195298138586388 0.0178437347769987 0.0397499999982"
+      rpy="-1.5707963267949 0 -0.204757195318116" />
+    <parent
+      link="Kaki 3" />
+    <child
+      link="Kaki 3_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 3_3">
+    <inertial>
+      <origin
+        xyz="0.0219620052084269 1.23470630666866E-06 -0.0143959823159015"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569382191511846" />
+      <inertia
+        ixx="4.97477862013397E-06"
+        ixy="1.37868115076886E-10"
+        ixz="2.95781803517955E-08"
+        iyy="1.01414200491212E-05"
+        iyz="1.01641835029357E-14"
+        izz="1.11481952438659E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 3_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 3_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="33"
+    type="continuous">
+    <origin
+      xyz="0.0236174866570732 -0.0347305963669316 0"
+      rpy="0 0 -2.97667305343781" />
+    <parent
+      link="Kaki 3_2" />
+    <child
+      link="Kaki 3_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Kaki 4">
+    <inertial>
+      <origin
+        xyz="0.0117257748616748 -1.13187115902136E-07 0.00272387313524841"
+        rpy="0 0 0" />
+      <mass
+        value="0.0459766729637116" />
+      <inertia
+        ixx="4.01620711458434E-06"
+        ixy="2.38022831001732E-08"
+        ixz="-2.94499318853841E-08"
+        iyy="8.92023398073755E-06"
+        iyz="1.13200682820849E-11"
+        izz="1.06463676928076E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="41"
+    type="fixed">
+    <origin
+      xyz="0.160822807226165 0.159361033621577 0.151725076212438"
+      rpy="0 0 -1.84354934859189" />
+    <parent
+      link="base_link" />
+    <child
+      link="Kaki 4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 4_2">
+    <inertial>
+      <origin
+        xyz="0.0100211163781045 -0.00466537644711285 -0.0151660098411677"
+        rpy="0 0 0" />
+      <mass
+        value="0.0550012454240305" />
+      <inertia
+        ixx="7.0937294894296E-06"
+        ixy="1.4150520304366E-07"
+        ixz="2.95775653466772E-08"
+        iyy="9.22534202703231E-06"
+        iyz="7.22682073645274E-15"
+        izz="1.39993037941083E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 4_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 4_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="42"
+    type="fixed">
+    <origin
+      xyz="-0.0238533677175906 0.0114380657750523 0.0397499999981997"
+      rpy="-1.5707963267949 0 0.0884309633722633" />
+    <parent
+      link="Kaki 4" />
+    <child
+      link="Kaki 4_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 4_3">
+    <inertial>
+      <origin
+        xyz="0.0219630833473997 -4.19331268763923E-07 0.0143959836135167"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569382188663184" />
+      <inertia
+        ixx="4.97477858942119E-06"
+        ixy="-1.3894007057671E-10"
+        ixz="-2.95775225234791E-08"
+        iyy="1.01414200325851E-05"
+        iyz="1.07685203349779E-14"
+        izz="1.11481951979658E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 4_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 4_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="43"
+    type="continuous">
+    <origin
+      xyz="0.00195413927528532 -0.0419545151474348 0"
+      rpy="-3.14159265358979 0 -1.36535209829523" />
+    <parent
+      link="Kaki 4_2" />
+    <child
+      link="Kaki 4_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Kaki 5">
+    <inertial>
+      <origin
+        xyz="0.0117258112223196 3.09450635532782E-07 0.00272387280989789"
+        rpy="0 0 0" />
+      <mass
+        value="0.045976673740398" />
+      <inertia
+        ixx="4.0003432451815E-06"
+        ixy="-6.74083314670085E-08"
+        ixz="-2.94537825785383E-08"
+        iyy="8.93609800445546E-06"
+        iyz="-3.30072582339408E-11"
+        izz="1.06463678356939E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="51"
+    type="fixed">
+    <origin
+      xyz="0.0925647368389534 0.157920970795924 0.151725076212438"
+      rpy="0 0 -1.49448349819303" />
+    <parent
+      link="base_link" />
+    <child
+      link="Kaki 5" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 5_2">
+    <inertial>
+      <origin
+        xyz="0.00857467510256843 0.00450616334847229 0.00166600984116795"
+        rpy="0 0 0" />
+      <mass
+        value="0.0550012454240305" />
+      <inertia
+        ixx="6.88875924752487E-06"
+        ixy="7.75159201670539E-07"
+        ixz="-2.95775653466723E-08"
+        iyy="9.43031226893702E-06"
+        iyz="7.2268390220874E-15"
+        izz="1.39993037941083E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 5_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 5_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="52"
+    type="fixed">
+    <origin
+      xyz="-0.0219816543840911 0.00586253960578612 0.0397499999981998"
+      rpy="1.57079632679491 0 -0.260634887026601" />
+    <parent
+      link="Kaki 5" />
+    <child
+      link="Kaki 5_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 5_3">
+    <inertial>
+      <origin
+        xyz="0.0219632210242148 -5.51064706449944E-07 0.000895983381377301"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569382197137765" />
+      <inertia
+        ixx="4.9747786229357E-06"
+        ixy="-1.38887766558503E-10"
+        ixz="-2.95775301662961E-08"
+        iyy="1.01414202173941E-05"
+        iyz="6.15657099157049E-15"
+        izz="1.11481954189791E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 5_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 5_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="53"
+    type="continuous">
+    <origin
+      xyz="-0.0110527642471299 0.0405195805020215 0"
+      rpy="0 0 1.94878589573245" />
+    <parent
+      link="Kaki 5_2" />
+    <child
+      link="Kaki 5_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Kaki 6">
+    <inertial>
+      <origin
+        xyz="0.0117259204129747 5.81904643068287E-07 0.00272387295111309"
+        rpy="0 0 0" />
+      <mass
+        value="0.0459766733747582" />
+      <inertia
+        ixx="3.95576245122326E-06"
+        ixy="-1.14114189101881E-07"
+        ixz="-2.9465223638192E-08"
+        iyy="8.98067874526251E-06"
+        iyz="-6.15786352775049E-11"
+        izz="1.06463677855161E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="61"
+    type="fixed">
+    <origin
+      xyz="0.0248812080577764 0.148966760297214 0.151725076212438"
+      rpy="0 0 -1.14541764779417" />
+    <parent
+      link="base_link" />
+    <child
+      link="Kaki 6" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 6_2">
+    <inertial>
+      <origin
+        xyz="0.00528006141462992 0.00116552238257572 0.00166600966912084"
+        rpy="0 0 0" />
+      <mass
+        value="0.0550012460711655" />
+      <inertia
+        ixx="4.2378614415098E-06"
+        ixy="7.36651862976314E-07"
+        ixz="-2.95775589628405E-08"
+        iyy="1.2081210238632E-05"
+        iyz="5.3712382402999E-15"
+        izz="1.39993039681442E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 6_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 6_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="62"
+    type="fixed">
+    <origin
+      xyz="-0.0199487557869358 0.0109366193425668 0.0397499999982001"
+      rpy="1.5707963267949 0 -0.501487623908419" />
+    <parent
+      link="Kaki 6" />
+    <child
+      link="Kaki 6_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Kaki 6_3">
+    <inertial>
+      <origin
+        xyz="0.0219621056522477 -5.62426581918185E-07 0.000895982059166009"
+        rpy="0 0 0" />
+      <mass
+        value="0.0569382196471864" />
+      <inertia
+        ixx="4.97477860495473E-06"
+        ixy="-1.38091121084429E-10"
+        ixz="-2.95782469136682E-08"
+        iyy="1.01414202232189E-05"
+        iyz="8.62460434778676E-15"
+        izz="1.11481954209746E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 6_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coba_robot/meshes/Kaki 6_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="63"
+    type="continuous">
+    <origin
+      xyz="-0.0406734108687668 0.0104725187926867 0"
+      rpy="0 0 1.18364807519028" />
+    <parent
+      link="Kaki 6_2" />
+    <child
+      link="Kaki 6_3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
